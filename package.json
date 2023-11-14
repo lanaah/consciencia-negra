@@ -1,0 +1,18 @@
+{
+    "name": "consciencia-negra",
+    "version": "1.0.0",
+    "description": "Site sobre a Consciência Negra",
+    "main": "index.html",
+    "scripts": {
+        "build": "mkdir -p build && cp -r * build/"
+      },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/lanaah/consciencia-negra.git"
+    },
+    "keywords": ["consciencia-negra", "site"],
+    "author": "Seu Nome",
+    "license": "MIT"
+  }
+
+  
