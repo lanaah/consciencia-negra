@@ -4,7 +4,8 @@
     "description": "Site sobre a Consciência Negra",
     "main": "index.html",
     "scripts": {
-        "build": "mkdir -p build && cp -r !(build) build/"
+        "build": "mkdir -p build && cp -r !(build) build/",
+        "start": "node script.js"
     },
     "repository": {
         "type": "git",
