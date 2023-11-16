@@ -13,11 +13,11 @@
             <h1>Consciência Negra<span id="icon">&#127988;</span></h1>
         </div>
         <div>
-            <a href="#" id="quem-somos-link">Quem somos</a>
-            <a href="#" data-sessao="sessao2">Importância</a>
-            <a href="#" data-sessao="sessao3">Vídeos</a>
-            <a href="#" data-sessao="sessao4">Filmes</a>
-            <a href="#" data-sessao="sessao5">Pratos Típicos</a>
+            <a href="#" id="quem-somos-link"><i>Quem somos</i></a>
+            <a href="#" data-sessao="sessao2"><i>Importância</i></a>
+            <a href="#" data-sessao="sessao3"><i>Vídeos</i></a>
+            <a href="#" data-sessao="sessao4"><i>Filmes</i></a>
+            <a href="#" data-sessao="sessao5"><i>Pratos Típicos</i></a>
         </div>
     </div>
     
@@ -150,7 +150,10 @@
     <h2>Pratos Típicos Africanos e sua Importância</h2>
     <div id="conteudo-container-5">
         <div class="conteudo-5">
-            <img src="jollofrice.jpg" alt="Jollof Rice">
+            <div class="image-container comida-overlay" onclick="openLink('https://mundonegro.inf.br/aprenda-a-preparar-o-jollof-o-arroz-mais-popular-do-oeste-africano/')">
+                <img src="jollofrice.jpg" alt="Jollof Rice">
+                <div class="hover-overlay"></div>
+            </div>
             <h3>Jollof Rice</h3>
             <p>
                 Originário da África Ocidental, o Jollof Rice é um prato tradicional feito com arroz, tomate, cebola e uma mistura única de especiarias. É um prato popular em festividades e celebrações, refletindo a rica diversidade culinária da região.
@@ -158,7 +161,10 @@
         </div>
 
         <div class="conteudo-5">
-            <img src="bobotie.jpg" alt="Bobotie">
+            <div class="image-container comida-overlay" onclick="openLink('https://receitas.globo.com/tipos-de-prato/carnes/bobotie-prato-principal-de-carne-sul-africana-4d51528f52e0b252bc00eea8.ghtml')">
+                <img src="bobotie.jpg" alt="Bobotie">
+                <div class="hover-overlay"></div>
+            </div>
             <h3>Bobotie</h3>
             <p>
                 Originado na África do Sul, o Bobotie é uma mistura saborosa de carne moída, especiarias e um creme de ovo por cima. Ele representa a influência das diversas culturas que contribuíram para a culinária do país.
@@ -166,7 +172,10 @@
         </div>
 
         <div class="conteudo-5">
-            <img src="moqueca.jpeg" alt="Moqueca">
+            <div class="image-container comida-overlay" onclick="openLink('https://www.tudogostoso.com.br/receita/2831-moqueca-de-peixe.html')">
+                <img src="moqueca.jpeg" alt="Moqueca">
+                <div class="hover-overlay"></div>
+            </div>
             <h3>Moqueca</h3>
             <p>
                 A Moqueca, tem suas raízes na tradição culinária africana, trazida pelos escravizados. É um cozido de peixe ou frutos do mar, preparado com azeite de dendê e leite de coco, refletindo a influência da diáspora africana.
@@ -174,6 +183,50 @@
         </div>
     </div>
 </div>
+
+<div class="sessao" id="sessao7">
+    <h2 id="poema-titulo">Poema: Consciência Negra</h2>
+    <div id="conteudo-container-7">
+        <div id="poema-conteudo">
+            <p>
+                Na dança das sombras, em noites estreladas,<br>
+                Resplandece a herança de uma história marcada.<br>
+                Na pele que carrega séculos de lutas,<br>
+                Floresce a beleza de almas intrépidas<br><br>
+
+                Caminho trilhado com passos de esperança.<br>
+                No espelho da memória, reflete a resistência,<br>
+                Um povo que ergue sua voz com consistência<br>
+                E que vive sem perder sua resiliência.<br><br>
+
+                O ebano das raízes, profundo e forte,<br>
+                Na trama da cultura, um elo de suporte.<br>
+                Os tambores ressoam, contando histórias,<br>
+                Da África à diáspora, de glórias e vitórias.
+            </p>
+    
+            <p>
+                Mãos que tecem destinos, com talento e valor,<br>
+                Na tela da vida, um quadro de fulgor.<br>
+                Cada traço, uma marca, uma identidade,<br>
+                Na busca incessante por igualdade.<br><br>
+
+                Que o mundo desperte, ouça o clamor,<br>
+                Que a igualdade floresça, sem temor.<br>
+                Na poesia da vida, a diversidade é riqueza.<br>
+                E no compasso da esperança, a harmonia se refaz.<br><br>
+
+                É a celebração da negritude, é memória viva,<br>
+                Do passado que persiste, da luta que cativa.<br>
+                Nas veias da história, um pulsar de orgulho,<br>
+                E nas asas da cultura, a mudança da narrativa.<br><br>
+
+                — Millarys Santos
+            </p>
+        </div>
+    </div>
+</div>
+
 
 <div id="sessao6">
     <h2 id="agradecimento-titulo">Agradecimentos e Referências</h2>
@@ -192,9 +245,9 @@
             <h3>Agradecimentos Especiais</h3>
             <p id="texto-agradecimento">Agradecemos cordialmente pela oportunidade de apresentar este projeto, realizado como parte de nossos estudos no Senac Mediotec, no 3º Ano A. Expressamos nossa profunda gratidão por participar desse trabalho que consideramos de extrema importância.
 
-                Reconhecemos a relevância da conscientização sobre os desafios enfrentados por muitas pessoas negras e acreditamos que fornecer informações por meio de vídeos, livros e até mesmo explorar a culinária africana é uma maneira significativa de contribuir para a compreensão e valorização da cultura negra em escala global.
+                Reconhecemos a relevância da conscientização sobre os desafios enfrentados por muitas pessoas negras e acreditamos que fornecer informações por meio de vídeos, livros e até mesmo explorar a culinária africana é uma maneira significativa de contribuir para a compreensão e valorização da cultura negra em escala global.<br>
                 
-                Expressamos nossa sincera gratidão aos professores que nos orientam diariamente, capacitando-nos a ser agentes de mudança na sociedade. Acreditamos que os conhecimentos adquiridos durante esses anos terão um impacto positivo em nosso futuro.
+                <br>Expressamos nossa sincera gratidão aos professores que nos orientam diariamente, capacitando-nos a ser agentes de mudança na sociedade. Acreditamos que os conhecimentos adquiridos durante esses anos terão um impacto positivo em nosso futuro.
                 
                 Agradecemos a cada um de vocês por fazerem a diferença. Continuaremos a lutar contra o racismo, dizendo #NãoAoRacismo, e reconhecendo que #VidasNegrasImportam. Muito obrigado.
                 

@@ -57,7 +57,7 @@ body {
     margin: 0 10px;
     font-weight: bold;
     padding: 20px 0; /* Ajuste a altura alterando o valor de 20px conforme necessário */
-    font-family: 'Pacifico', cursive;
+    font-family: 'Open Sans', sans-serif;
     font-size: 22px;
     transition: background 0.5s ease-in-out;
     border-radius: 8px; /* Arredonda as bordas */
@@ -65,7 +65,6 @@ body {
 
 #menu a:hover {
     text-decoration: underline;
-    background: rgba(0, 0, 0, 0.2); /* Preto mais transparente */
     transition-delay: 0s; /* Remover o atraso ao passar o mouse por cima */
 }
 
@@ -79,7 +78,7 @@ body {
     background-color: #f5c518;
     padding: 10px;
     border-radius: 5px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
 }
 
@@ -460,6 +459,11 @@ body {
     margin-bottom: 3cm;
 }
 
+#sessao6 {
+    margin-top: 3cm;
+    margin-bottom: 3cm;
+}
+
 .filme {
     position: relative;
     overflow: hidden;
@@ -501,3 +505,154 @@ body {
   .filme:hover::before {
     opacity: 1;
   }
+
+  .comida-overlay {
+    position: relative;
+    cursor: pointer;
+}
+
+.comida-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.comida-overlay:hover::before {
+    opacity: 1;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 223, 51, 0.7); /* Cor amarela com transparência */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover .hover-overlay {
+    opacity: 1;
+}
+
+.image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover::before {
+    opacity: 1;
+}
+
+.conteudo-5 {
+    position: relative;
+    cursor: pointer;
+}
+
+.conteudo-5:hover .hover-overlay {
+    opacity: 1;
+}
+
+.conteudo-5::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 223, 51, 0.2); /* Amarelo transparente */
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.conteudo-5:hover::before {
+    opacity: 1;
+}
+
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 223, 51, 0.2); /* Cor amarela com transparência */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#sessao7 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 3cm; /* Margens de 3 cm de cada lado */
+    position: relative;
+    background: rgba(0, 0, 0, 0.8);
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+#sessao7 h2 {
+    font-size: 28px;
+    color: #f5c518;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#conteudo-container-7 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.conteudo-7 {
+    width: 48%;
+    margin: 10px;
+    text-align: justify;
+    display: inline-block;
+    position: relative;
+}
+
+#poema-conteudo {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: white; /* torna o texto branco */
+    background: rgba(255, 255, 255, 0.1); /* fundo com destaque */
+    padding: 20px; /* adiciona algum espaçamento interno */
+    border-radius: 10px; /* bordas arredondadas */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5); /* sombra sutil */
+    transform: skew(-5deg); /* efeito de itálico */
+}
+
+#poema-titulo {
+    font-size: 2.5em;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 20px;
+    color: #fff;
+}
